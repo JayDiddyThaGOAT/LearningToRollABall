@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 1234250855}
   - component: {fileID: 1234250854}
   - component: {fileID: 1234250853}
+  - component: {fileID: 1234250857}
   m_Layer: 0
   m_Name: RollerAgent
   m_TagString: Untagged
@@ -445,6 +446,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234250857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234250852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4978174bc6500247bd0e93f60cc70f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agentParameters:
+    maxStep: 0
+    resetOnDone: 1
+    onDemandDecision: 0
+    numberOfActionsBetweenDecisions: 0
+  target: {fileID: 0}
 --- !u!1 &1619450169
 GameObject:
   m_ObjectHideFlags: 0
