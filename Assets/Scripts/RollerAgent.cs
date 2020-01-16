@@ -63,4 +63,12 @@ public class RollerAgent : Agent
         if (transform.position.y < 0)
             Done();
     }
+
+    public override float[] Heuristic()
+    {
+        float[] action = new float[2];
+        action[0] = Input.GetAxis("Horizontal");
+        action[1] = Input.GetAxis("Vertical");
+        return action;
+    }
 }
